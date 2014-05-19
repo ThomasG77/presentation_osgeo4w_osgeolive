@@ -11,87 +11,125 @@ Le seul moyen c'était de compiler avec MinGW.
 
 ## De nos jours
 
-### Le plus
+### Le positif
 
 Amélioration car il existe presque toujours un installateur Windows
 
-### Le moins
+### Le négatif
 
-Un écosystème côté logiciel toujours fragmenté sous [Windows](http://live.osgeo.org/fr/win_installers.html)
+Un écosystème côté logiciels SIG toujours fragmenté sous [Windows](http://live.osgeo.org/fr/win_installers.html)
 
-Une cible Windows mouvante: version C++, architecture 32/64 bits, système d'exploitation
+Une cible Windows mouvante: version de C++, architecture 32/64 bits, système d'exploitation
 
 ## Exemples (en C en particulier):
 
-* GDAL
+-   GDAL
 
-    * [FWTools](http://fwtools.maptools.org)
+    -  [FWTools](http://fwtools.maptools.org)
 
-    * [Gis Internals](http://gisinternals.com/sdk/)
+    -  [Gis Internals](http://gisinternals.com/sdk/)
 
-* MapServer
+-   MapServer
 
-    * [MS4W](http://www.maptools.org/ms4w/)
+    -  [MS4W](http://www.maptools.org/ms4w/)
 
-    * [Gis Internals](http://gisinternals.com/sdk/)
+    -  [Gis Internals](http://gisinternals.com/sdk/)
+
+## Différentes cibles
+
+-   Utilisateurs finaux intéressés par la donnée (analyse en particulier):
+
+    -   professionnels "utilisateurs" (bureau d'études, sociétés de services, consultants,...)
+
+    -   formateurs (écoles, universités ou sociétés privées axées formation)
+
+    -   utilisateurs OpenStreetMap
+
+-   Développeur, intéressé par une première approche du géospatial
+
+-   Géomaticien, intéressé pour éviter le processus d'installation
+
+-   Administrateur système, intéressé par le déploiement
 
 
 # Des solutions <br/><br/><img width="450" src="images/icon_41982.png" />
 
 ## Deux projets principaux
 
-### OSGEO4W
+-   L'OSGEO4W
 
-Un installateur simple pour Windows
+-   L'OSGeo Live
 
-### OSGeo Live
 
-Un DVD, une clé USB bootable ou une image disque virtuelle indépendante basée sur Xubuntu, qui vous permet d’essayer une large variété de logiciels opensource géospatiaux
+# L'OSGEO4W ?
 
-# L'OSGEO4W plus en détails
+Un installateur simple pour Windows pour les logiciels SIG libres /Open Source basé sur CygWin.
+
+Il embarque tous les utilitaires classiques de Linux
+
+Il gère les dépendances
 
 ## Les logiciels principaux supportés
 
-* Apache
-* MapServer
-* TinyOWS
-* QGIS
-* Grass
-* GDAL (avec extensions)
-* Udig
-* Python (avec extensions)
-* SQLite
-* Spatialite
-* Proj
-* Geos
+-  Apache
+-  MapServer
+-  TinyOWS
+-  QGIS
+-  Grass
+-  OTB
+-  OSSIM
+-  GDAL (avec extensions)
+-  Udig
+-  Python (avec extensions)
+-  SQLite
+-  Spatialite
+-  Proj
+-  Geos
+-  ...
 
-## La version courte
+<div class="notes">
+Applicatifs accessibles depuis le menu ou via la ligne de commande, en définissant des variables d'environnement
+</div>
 
-Installation Express
+## Pour les pressés
 
+### Installation Express (Desktop et Web)
 
+![](images/osgeo4w_express_desktop.png)
 
-## La version longue
+<div class="notes">
+Vous cochez le logiciel que vous voulez et vous faites "Suivant-Suivant".
+</div>
 
-Installation avancée
+## Pour les autres
 
-* Multi-versions
+### Installation avancée
 
-* Mode offline
+![](images/osgeo4w_advanced.png)
 
-## Forces principales
+<div class="notes">
+Vous gérez chaque paquet, les versions des logiciels installés
+Multi-versions
+Mode offline
+</div>
 
-* Facile à installer pour les débutants
+## Forces
 
-* Multi-versions
+- Facile à installer pour les débutants
 
-* Pas de séparation entre système d'exploitation, logiciel et fichiers
+- Installation automatisée en ligne de commande
+
+- Multi-versions des logiciels
+
+- Pas de séparation entre système d'exploitation, logiciel et fichiers
 
 ## Faiblesses
 
-* Installateur pas universellement adopté au sein de l'OSGeo
+- Installateur pas universellement adopté au sein de l'OSGeo
 
-* Partie de la communauté concentrée sur l'OSGeo Live plutôt
+- Report d'une partie de la communauté sur l'OSGeo Live
+
+- Support 64 bits des paquets limités
 
 # Qu'est ce que l'OSGeoLive?
 
@@ -107,6 +145,8 @@ Installation avancée
 -   Traductions
 
 <div class="notes">
+Un DVD, une clé USB bootable ou une image disque virtuelle indépendante basée sur Xubuntu, qui vous permet d’essayer une large variété de logiciels opensource géospatiaux
+
 OSGeo Live is a self-contained bootable DVD, based on the Xubuntu linux
 distribution, that is pre-installed and pre-configured with over 50 of
 the best GeoSpatial Open Source applications along with sample datasets.
@@ -123,7 +163,6 @@ trialling a range of Open Source Software.
 <img width="600" src="images/virtual_machine_usb.png" />
 
 ## Critères de qualité
-
 
 -   Logiciel établi, stable et fonctionnant
 -   Communauté active
@@ -152,9 +191,9 @@ Mise à jour:
 
 Depuis 2006, une ombrelle non lucrative pour:
 
--   Les logiciels Géospatiaux libres et Open Source
--   L'éducation
--   L'Open Data
+-   les logiciels Géospatiaux libres et Open Source
+-   l'éducation
+-   l'Open Data
 
 <img  src="images/OSGeo_compass_with_text_square.png" alt="OSGeo" target="http://osgeo.org" />
 <img class="image" valign="top"  src="images/gnu.png" width="300" alt="GNU" />
@@ -443,7 +482,7 @@ ncWMS publishes multi-dimensional data, such as environmental and weather data, 
 
 # Stockage de données
 
-## Stockahe de données spatiales
+## Stockage de données spatiales
 
 <small>
  <table>
@@ -518,7 +557,7 @@ SQLite is a self-contained, zero-administration, relational database, which can 
  GpsDrive is a GPS navigation system for a car, bike, ship, plane, or just walking. It displays your position provided from a GPS on a zoomable map.  It can read position from any GPS which supports the NMEA protocol as well as many USB GPSs.
 </div>
 
-## Prune - Voir, éditer et convertire des traces GPS
+## Prune - Voir, éditer et convertir des traces GPS
 <img  src="images/prune_denver.png" width="800" height="600" alt="" />
 <div class="notes">
  Prune is a tool for viewing, editing and converting coordinate data from GPS systems.  It uses OpenStreetMap imagery to show recorded tracks and waypoints, and provides a variety of tools to let you edit, crop and prune the data points.  It also has functions for correlating photos to the coordinates using the photo timestamps.
@@ -550,7 +589,7 @@ SQLite is a self-contained, zero-administration, relational database, which can 
  Viking is a GPS data editor, analyser and viewer. It allows you to import and plot tracks and waypoints, show OpenStreetMap and Terraserver maps, download geocaches for a map area, make new tracks and waypoints, see your real time GPS position and more.
 </div>
 
-# Outils Spatial
+# Outils Spatiaux
 
 ## Outils spécifiques pour l'analyse
 
@@ -713,14 +752,14 @@ MB-System processes and displays bathymetry and backscatter imagery data derived
  The North Carolina dataset bundled with OSGeo-Live is a good educational dataset, providing raster data, vector data, a watershed model, elevation maps, landuse and landcover, LANDSAT7 imagery and more.
 </div>
 
-## OSM - Extract depuis OpenStreetMap
+## OSM - Extrait depuis OpenStreetMap
 <img  src="images/osm-screenshot.jpg" width="800" height="600" alt="" />
 <div class="notes">
  OpenStreetMap is a crowd sourced map of the world which has grown to become one of the most detailed sources of local-scale map data available.
  The OSGeo-Live distribution includes a city sized extract of OpenStreetMap data.
 </div>
 
-## NetCDF - Séries temporelles des températures et des précipitations
+## NetCDF - Séries temporelles de températures et des précipitations
 <img  src="images/netcdf_annual_avg_max_temp.png" width="800" height="600" alt="" />
 <div class="notes">
  A NetCDF dataset is provided, which includes annual maximum daily temperature, and annual maximum consecutive five-day precipitation, both historical and predicted from 1850 to 2100.
@@ -789,7 +828,7 @@ GDAL and OGR are best known as the vector and raster Geographic Data Abstraction
 ## Iris - Météorologie et climatologie
 <img  src="images/iris.jpg" width="800" height="600" alt="" />
 <div class="notes">
- Iris is a powerful, Python library for analysing and visualising meteorological and oceanographic data sets.
+ Iris est une bibbliothèque Python puissante pour analyser et visualiser des jeux de données météorologiques et océanographiques.
 </div>
 
 # Autres applications
@@ -805,35 +844,58 @@ GDAL and OGR are best known as the vector and raster Geographic Data Abstraction
  </table>
 </small>
 <div class="notes">
- There are a few applications have installers on OSGeo-Live, but can't be run directly.
+ Les applications qui ont des installateurs mais ne sont pas directement exécutables depuis l'OSGeoLive.
 </div>
 
-## MapGuide - Web Services
+## MapGuide - Services Web
 <img  src="images/mapguide_viewer.png" width="800" height="600" alt="" />
 <div class="notes">
-MapGuide Open Source is a web-based platform that enables users to develop and deploy web mapping applications and geospatial web services.
+MapGuide Open Source est une plateforme qui permet aux utilisateurs de développer et déployer des applications de cartographie en ligne et des services web géospatiaux.
 </div>
 
-## MapWindow - SIG bureautique axé sur Microsoft Windows
+## MapWindow - SIG bureautique axé Microsoft Windows
 <img  src="images/mapwindow-screenshot.jpg" width="800" height="600" alt="" />
 <div class="notes">
- MapWindow GIS is a desktop client specifically written to integrate with windows based applications as it is based upon ActiveX controls. As such it is easy to incorporate into Microsoft Office based products such as Excel and Access, as well as programs written in VisualBasic, C++, C#, .NET, and Delphi.  MapWindow provides tools to visualize, manage, edit, analyse data, and compose printable maps.
+ MapWindow est client bureautique écrit pour s'intégrer avec les applications Windows car basé sur des contrôles ActiveX. Aisni, il est facile à intégrer dans des produits basés sur Microsoft Office comme Excel et Access, ainsi que les programmes en VisualBasic, C++, C#, .NET, et Delphi.  MapWindow fournit des outils pour visualiser, gérer, éditer, analyser et composer des cartes imprimables.
 </div>
 
 
 # Pour aller plus loin
 
+## Les sites
 
-Docker
+**OSGEO4W**
 
+[Site officiel](http://trac.osgeo.org/osgeo4w/wiki/OSGeo4W_fr)
 
+**OSGeo-Live**
 
-Appels aux écoles, enseignants et élèves à contribuer et à utiliser.
+[Site officiel](http://live.osgeo.org/fr/)
 
+[Wiki](http://wiki.osgeo.org/wiki/Live_GIS_Disc)
 
-Un installateur Windows en ligne de commande, alternative à Cygwin
-[Chocolatey](https://chocolatey.org)
+## Des solutions d'installation alternatives plus génériques
 
+### Sous Linux:
+
+-   [Docker](https://www.docker.io)
+
+    Permet de faire fonctionner ses applications dans des "conteneurs"
+
+### Sous Windows:
+
+-   [Chocolatey](https://chocolatey.org)
+
+    Un installateur Windows en ligne de commande, alternative à Cygwin
+
+### Sous différents OS:
+
+-   [Vagrant](http://www.vagrantup.com), [Fabric](http://docs.fabfile.org) et autres outils de déploiement "tendance DevOPS"
+
+<div class="notes">
+Docker: comme une machine virtuelle en simplifié mais on n'a pas d'OS installé directement.
+On peut faire tourner un MapServer dedans par exemple dont la version est différente de celui sur l'OS
+</div>
 
 ## 2 solutions. Quelles différences?
 
