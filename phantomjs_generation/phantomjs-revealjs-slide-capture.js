@@ -37,6 +37,7 @@ page.open(url, function (status) {
             'transition': 'none',
             'backgroundTransition': 'none'
         });
+        document.getElementsByClassName('controls')[0].style.display = 'None';
     });
 
     // Disable transitions on "fragmented views".
