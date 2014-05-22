@@ -1,4 +1,4 @@
-# OSGeo4W et OSGeo-Live: bien aborder l'écosystème Géospatial Open Source
+# OSGeo4W et OSGeo-Live: bien aborder l'écosystème Géospatial Open Source <br/><small style="color:#1166AD;">Thomas Gratier</small>
 
 # Le constat <br/><br/><img width="450" src="images/icon_22637.png" />
 
@@ -877,15 +877,13 @@ MapGuide Open Source est une plateforme qui permet aux utilisateurs de développ
 
 # Des solutions mais quels choix, pour qui?
 
-## Utilisateurs finaux pour l'analyse
-
-## Géomaticiens "utilisateurs"
+## Utilisateurs finaux pour l'analyse (dont géomaticiens)
 
 Pour une utilisation bureautique classique:
 
 -   OSGEO4W
 
-Pour une utilisation spécifique avec de nombreuses briques:
+Pour une utilisation bureautique spécifique avec de nombreuses briques:
 
 -   OSGeo Live
 
@@ -897,7 +895,7 @@ Pour une utilisation web
 
 -   OSGeo Live
 
-## Géomaticiens
+## Géomaticiens allant vers le développement
 
 -  Commencer avec l'OSGEO4W pour se familiariser avec l'usage bureautique
 
@@ -910,6 +908,8 @@ Pour une utilisation web
 ## Administrateurs système
 
 -  Réutilisation des [sources SVN](https://svn.osgeo.org/osgeo/livedvd/), en particulier pour le déploiement
+
+-  Réutilisation des paquets de la distribution
 
 
 # Pour aller plus loin

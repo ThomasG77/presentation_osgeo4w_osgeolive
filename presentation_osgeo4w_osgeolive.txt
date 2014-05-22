@@ -1,4 +1,4 @@
-# OSGeo4W et OSGeo-Live: bien aborder l'écosystème Géospatial Open Source
+# OSGeo4W et OSGeo-Live: bien aborder l'écosystème Géospatial Open Source <br/><small style="color:#1166AD;">Thomas Gratier</small>
 
 # Le constat <br/><br/><img width="450" src="images/icon_22637.png" />
 
@@ -468,13 +468,13 @@ avoiding vendor lock-in.
 
 # Des solutions mais quels choix, pour qui?
 
-## Géomaticiens "utilisateurs"
+## Utilisateurs finaux pour l'analyse (dont géomaticiens)
 
 Pour une utilisation bureautique classique:
 
 -   OSGEO4W
 
-Pour une utilisation spécifique avec de nombreuses briques:
+Pour une utilisation bureautique spécifique avec de nombreuses briques:
 
 -   OSGeo Live
 
